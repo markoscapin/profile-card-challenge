@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  background: hsl(185, 75%, 39%);
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.main-container {
+  width: 1440px;
+  height: 1140px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.profile-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 2px 50px hsl(227, 10%, 46%);
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.top-circle {
+  position: absolute;
+  top: -35%;
+  left: -20%;
+}
+
+.bottom-circle {
+  position: absolute;
+  top: 50%;
+  right: -20%;
+}
+
+/* statistics grid layout */
+.stats-container {
+  padding-top: 10px;
+  display: grid;
+  grid-template-areas:
+    'stats stats stats'
+    'descr descr descr';
+  border-top: solid 1px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.numbers {
+  grid-area: stats;
+}
+
+.description {
+  grid-area: descr;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 5px;
+  color: hsl(227, 10%, 46%);
+}
+
+.pattern-card {
+  width: 100%;
+}
+
+h3 {
+  display: inline-block;
+  margin: 0;
+  color: hsl(227, 10%, 46%);
+  font-weight: 300;
+  padding-left: 5px;
+}
+
+h5 {
+  margin: 20px auto 50px;
+  font-weight: 300;
+  color: hsl(227, 10%, 46%);
+}
+
+.profile-img {
+  display: block;
+  margin: auto;
+  position: relative;
+  bottom: 12%;
+  border-radius: 100%;
+  border: solid 3px white;
+}
+
+.bottom-profile-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.title {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .top-circle {
+    max-width: 350px;
+    top: -30%;
+    left: -35%;
+  }
+
+  .bottom-circle {
+    max-width: 350px;
+    top: 70%;
+    right: -50%;
+  }
+
+  .profile-card {
+    width: 350px;
+
+  }
+
+
+}
